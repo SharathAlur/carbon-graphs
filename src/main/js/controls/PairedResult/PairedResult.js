@@ -170,7 +170,8 @@ class PairedResult extends GraphContent {
                         key: `${this.dataTarget.key}_${type}`,
                         label: getValue(this.dataTarget.label, type),
                         color: getValue(this.dataTarget.color, type),
-                        shape: getValue(this.dataTarget.shape, type)
+                        shape: getValue(this.dataTarget.shape, type),
+                        values: this.dataTarget.values
                     },
                     graph.axesLabelShapeGroup[this.config.yAxis]
                 );
